@@ -42,7 +42,7 @@ public class provamenu1 {
 
             System.out.println("el numero " + opcio);
 
-            // el switch si tries una opcio surt del menu
+            
 
             switch (opcio) {
             case 1:
@@ -193,10 +193,7 @@ public class provamenu1 {
                             + rs1.getInt("quantitat"));
                 }
 
-                // String insNomProd = "nom =\"%s\"".formatted(nomProd);
-                // insNomProd = String.format("nom = \"%s\" ", nomProd);
-                // String insNomProd = "nom =" + "\"nomProd"\"";
-                // System.out.println(insNomProd);
+             
                 sortir3 = false;
                 break;
 
@@ -234,15 +231,6 @@ public class provamenu1 {
         } else {
             System.out.println("no insertat");
         }
-
-        // String insert = ("insert * from producte order by quantitat ;");
-        // PreparedStatement ps = connexioBD.prepareStatement(consulta);
-        // ps.executeQuery();
-        // ResultSet rs= ps.executeQuery();
-        // while (rs.next()) {
-        // System.out.println(rs.getString("id")+rs.getString("preu")+rs.getString("codi_cat")+rs.getString("nom")+rs.getString("quantitat"));
-        // }
-
     }
 
     static void modificarPorducte() throws SQLException {
@@ -317,26 +305,6 @@ public class provamenu1 {
             }
 
         } while (!sortir3);
-
-        // String insert = "Update producte Set ?,?,?,? where ? or ?";
-        // PreparedStatement sentencia = connexioBD.prepareStatement(insert);
-        // // sentencia.setString(1, modNomProd);
-        // // sentencia.setString(2, modQuantitat);
-        // // sentencia.setString(3, modPreu);
-        // // sentencia.setString(4, modCodiCat);
-        // sentencia.setInt(5, idProd);
-
-        // // sentencia.setInt(3, id_categoria);
-        // // sentencia.setInt(4, quantitat);
-        // if (sentencia.executeUpdate() != 0) {
-        // System.out.println(" ");
-        // } else {
-        // System.out.println("no insertat");
-        // }
-
-        // }
-        // fer amb el getstring el programa fer variables per defecte amb la consulta
-        // que hem fet i si la variable es cambiaaa es fica el valor nou
     }
 
     static void modificarProducte2() throws SQLException {
